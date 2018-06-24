@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A930B8DAA390681029C1D21 /* Pods_MoneyTap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D91D75D0E03A691F9941FBC /* Pods_MoneyTap.framework */; };
 		692446E220DE0B7C0074CC67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692446E120DE0B7C0074CC67 /* AppDelegate.swift */; };
-		692446E420DE0B7C0074CC67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692446E320DE0B7C0074CC67 /* ViewController.swift */; };
+		692446E420DE0B7C0074CC67 /* SearchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692446E320DE0B7C0074CC67 /* SearchResultController.swift */; };
 		692446E720DE0B7C0074CC67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692446E520DE0B7C0074CC67 /* Main.storyboard */; };
 		692446EA20DE0B7C0074CC67 /* MoneyTap.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 692446E820DE0B7C0074CC67 /* MoneyTap.xcdatamodeld */; };
 		692446EC20DE0B7E0074CC67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 692446EB20DE0B7E0074CC67 /* Assets.xcassets */; };
 		692446EF20DE0B7E0074CC67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 692446ED20DE0B7E0074CC67 /* LaunchScreen.storyboard */; };
 		692446FA20DE0B7E0074CC67 /* MoneyTapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692446F920DE0B7E0074CC67 /* MoneyTapTests.swift */; };
 		6924470520DE0B7E0074CC67 /* MoneyTapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924470420DE0B7E0074CC67 /* MoneyTapUITests.swift */; };
+		6924471320DE0F280074CC67 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924471220DE0F280074CC67 /* TableViewDataSource.swift */; };
+		6924471620DE0FB50074CC67 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924471420DE0FB50074CC67 /* SearchResultTableViewCell.swift */; };
+		6924471720DE0FB50074CC67 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6924471520DE0FB50074CC67 /* SearchResultTableViewCell.xib */; };
+		6924471920DE11650074CC67 /* SearchResultCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924471820DE11650074CC67 /* SearchResultCellViewModel.swift */; };
+		6924471E20DE14690074CC67 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924471D20DE14690074CC67 /* UITableViewCell+Extension.swift */; };
+		6924472820DE20DB0074CC67 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924472720DE20DB0074CC67 /* DetailsViewController.swift */; };
+		6924472A20DE226B0074CC67 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924472920DE226B0074CC67 /* UIViewController+Extension.swift */; };
+		6924486620DE26E80074CC67 /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924481D20DE26E70074CC67 /* Fetcher.swift */; };
+		6924487A20DE26E80074CC67 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924483320DE26E70074CC67 /* RequestBuilder.swift */; };
+		6924487B20DE26E80074CC67 /* RequestFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924483420DE26E70074CC67 /* RequestFactory.swift */; };
+		6924487D20DE29540074CC67 /* SearchFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924487C20DE29540074CC67 /* SearchFetcher.swift */; };
+		6924488120DE2C360074CC67 /* SearchResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6924488020DE2C360074CC67 /* SearchResultViewModel.swift */; };
+		693DB7FD20DED457008B5637 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DB7FC20DED457008B5637 /* Helper.swift */; };
+		693DB80020DED679008B5637 /* SearchFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DB7FF20DED679008B5637 /* SearchFetcherTests.swift */; };
+		693DB80220DED847008B5637 /* DetailFetcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DB80120DED847008B5637 /* DetailFetcherTests.swift */; };
+		693DB80520DEDE34008B5637 /* CoreDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DB80420DEDE34008B5637 /* CoreDataHandler.swift */; };
+		693DB81420DEE2DA008B5637 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DB81220DEE2DA008B5637 /* User+CoreDataClass.swift */; };
+		693DB81520DEE2DA008B5637 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DB81320DEE2DA008B5637 /* User+CoreDataProperties.swift */; };
+		693DB81720DF983B008B5637 /* User+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 693DB81620DF983B008B5637 /* User+Extension.swift */; };
+		69948EAA20DE5412008DF901 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69948EA920DE5412008DF901 /* SearchResult.swift */; };
+		69948EAD20DE6228008DF901 /* DetailFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69948EAC20DE6228008DF901 /* DetailFetcher.swift */; };
+		69948EAF20DE6362008DF901 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69948EAE20DE6362008DF901 /* DetailViewModel.swift */; };
+		69948EB120DE640A008DF901 /* PageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69948EB020DE640A008DF901 /* PageDetail.swift */; };
+		84E521F9293F330F7B5CFF2B /* Pods_MoneyTapTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD063514C2A8F0918D841AA /* Pods_MoneyTapTests.framework */; };
+		87844F3796569750D0C95FD0 /* Pods_MoneyTapUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62AD0CC1CE1D7354F6D17CEE /* Pods_MoneyTapUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +61,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08151735F150566F672AB089 /* Pods-MoneyTap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTap.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTap/Pods-MoneyTap.release.xcconfig"; sourceTree = "<group>"; };
+		0D91D75D0E03A691F9941FBC /* Pods_MoneyTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AEFA35DBB0C9BE9C239C0BA /* Pods-MoneyTapUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapUITests/Pods-MoneyTapUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4C9825EB2983D4D6A4F26A80 /* Pods-MoneyTapTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapTests/Pods-MoneyTapTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5397B8FB45FA1A836EB12144 /* Pods-MoneyTap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTap/Pods-MoneyTap.debug.xcconfig"; sourceTree = "<group>"; };
+		62AD0CC1CE1D7354F6D17CEE /* Pods_MoneyTapUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTapUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		692446DE20DE0B7C0074CC67 /* MoneyTap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		692446E120DE0B7C0074CC67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		692446E320DE0B7C0074CC67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		692446E320DE0B7C0074CC67 /* SearchResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultController.swift; sourceTree = "<group>"; };
 		692446E620DE0B7C0074CC67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		692446E920DE0B7C0074CC67 /* MoneyTap.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoneyTap.xcdatamodel; sourceTree = "<group>"; };
 		692446EB20DE0B7E0074CC67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +81,32 @@
 		6924470020DE0B7E0074CC67 /* MoneyTapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6924470420DE0B7E0074CC67 /* MoneyTapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTapUITests.swift; sourceTree = "<group>"; };
 		6924470620DE0B7E0074CC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6924471220DE0F280074CC67 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		6924471420DE0FB50074CC67 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		6924471520DE0FB50074CC67 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
+		6924471820DE11650074CC67 /* SearchResultCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCellViewModel.swift; sourceTree = "<group>"; };
+		6924471D20DE14690074CC67 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		6924472720DE20DB0074CC67 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		6924472920DE226B0074CC67 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		6924481D20DE26E70074CC67 /* Fetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		6924483320DE26E70074CC67 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		6924483420DE26E70074CC67 /* RequestFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestFactory.swift; sourceTree = "<group>"; };
+		6924487C20DE29540074CC67 /* SearchFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFetcher.swift; sourceTree = "<group>"; };
+		6924488020DE2C360074CC67 /* SearchResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultViewModel.swift; sourceTree = "<group>"; };
+		693DB7FC20DED457008B5637 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		693DB7FF20DED679008B5637 /* SearchFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFetcherTests.swift; sourceTree = "<group>"; };
+		693DB80120DED847008B5637 /* DetailFetcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFetcherTests.swift; sourceTree = "<group>"; };
+		693DB80420DEDE34008B5637 /* CoreDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataHandler.swift; sourceTree = "<group>"; };
+		693DB81220DEE2DA008B5637 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		693DB81320DEE2DA008B5637 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		693DB81620DF983B008B5637 /* User+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+Extension.swift"; sourceTree = "<group>"; };
+		69948EA920DE5412008DF901 /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		69948EAC20DE6228008DF901 /* DetailFetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFetcher.swift; sourceTree = "<group>"; };
+		69948EAE20DE6362008DF901 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		69948EB020DE640A008DF901 /* PageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageDetail.swift; sourceTree = "<group>"; };
+		ADD063514C2A8F0918D841AA /* Pods_MoneyTapTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyTapTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B11481A4E5F44770688219D6 /* Pods-MoneyTapTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapTests/Pods-MoneyTapTests.release.xcconfig"; sourceTree = "<group>"; };
+		BF0E0BA4633E7B09F59C1C91 /* Pods-MoneyTapUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyTapUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyTapUITests/Pods-MoneyTapUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A930B8DAA390681029C1D21 /* Pods_MoneyTap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84E521F9293F330F7B5CFF2B /* Pods_MoneyTapTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +130,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87844F3796569750D0C95FD0 /* Pods_MoneyTapUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0083D056FE90F1FF6F4A1B20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D91D75D0E03A691F9941FBC /* Pods_MoneyTap.framework */,
+				ADD063514C2A8F0918D841AA /* Pods_MoneyTapTests.framework */,
+				62AD0CC1CE1D7354F6D17CEE /* Pods_MoneyTapUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		692446D520DE0B7C0074CC67 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +154,8 @@
 				692446F820DE0B7E0074CC67 /* MoneyTapTests */,
 				6924470320DE0B7E0074CC67 /* MoneyTapUITests */,
 				692446DF20DE0B7C0074CC67 /* Products */,
+				D157DA551E0F06BC4F48ABBD /* Pods */,
+				0083D056FE90F1FF6F4A1B20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +172,17 @@
 		692446E020DE0B7C0074CC67 /* MoneyTap */ = {
 			isa = PBXGroup;
 			children = (
-				692446E120DE0B7C0074CC67 /* AppDelegate.swift */,
-				692446E320DE0B7C0074CC67 /* ViewController.swift */,
-				692446E520DE0B7C0074CC67 /* Main.storyboard */,
-				692446EB20DE0B7E0074CC67 /* Assets.xcassets */,
-				692446ED20DE0B7E0074CC67 /* LaunchScreen.storyboard */,
+				693DB80320DEDE22008B5637 /* Database */,
+				6924472520DE1E800074CC67 /* AppDelegate */,
+				6924471C20DE14480074CC67 /* Extension */,
+				6924472020DE1E0C0074CC67 /* DataSource */,
+				69948EAB20DE5417008DF901 /* Model */,
+				6924472220DE1E370074CC67 /* View */,
+				6924472120DE1E210074CC67 /* ViewModel */,
+				693DB7FB20DED449008B5637 /* Helper */,
+				692447E920DE26E70074CC67 /* Network */,
+				6924472320DE1E510074CC67 /* Storyboards */,
+				6924472420DE1E700074CC67 /* Resources */,
 				692446F020DE0B7E0074CC67 /* Info.plist */,
 				692446E820DE0B7C0074CC67 /* MoneyTap.xcdatamodeld */,
 			);
@@ -113,6 +192,7 @@
 		692446F820DE0B7E0074CC67 /* MoneyTapTests */ = {
 			isa = PBXGroup;
 			children = (
+				693DB7FE20DED628008B5637 /* Integration */,
 				692446F920DE0B7E0074CC67 /* MoneyTapTests.swift */,
 				692446FB20DE0B7E0074CC67 /* Info.plist */,
 			);
@@ -128,6 +208,147 @@
 			path = MoneyTapUITests;
 			sourceTree = "<group>";
 		};
+		6924471C20DE14480074CC67 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6924471D20DE14690074CC67 /* UITableViewCell+Extension.swift */,
+				6924472920DE226B0074CC67 /* UIViewController+Extension.swift */,
+				693DB81620DF983B008B5637 /* User+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6924472020DE1E0C0074CC67 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				6924471220DE0F280074CC67 /* TableViewDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		6924472120DE1E210074CC67 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6924471820DE11650074CC67 /* SearchResultCellViewModel.swift */,
+				6924488020DE2C360074CC67 /* SearchResultViewModel.swift */,
+				69948EAE20DE6362008DF901 /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6924472220DE1E370074CC67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				692446E320DE0B7C0074CC67 /* SearchResultController.swift */,
+				6924471420DE0FB50074CC67 /* SearchResultTableViewCell.swift */,
+				6924471520DE0FB50074CC67 /* SearchResultTableViewCell.xib */,
+				6924472720DE20DB0074CC67 /* DetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6924472320DE1E510074CC67 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				692446E520DE0B7C0074CC67 /* Main.storyboard */,
+				692446ED20DE0B7E0074CC67 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		6924472420DE1E700074CC67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				692446EB20DE0B7E0074CC67 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6924472520DE1E800074CC67 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				692446E120DE0B7C0074CC67 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		692447E920DE26E70074CC67 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				692447EC20DE26E70074CC67 /* Fetcher */,
+				6924483120DE26E70074CC67 /* Helpers */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		692447EC20DE26E70074CC67 /* Fetcher */ = {
+			isa = PBXGroup;
+			children = (
+				6924481D20DE26E70074CC67 /* Fetcher.swift */,
+				6924487C20DE29540074CC67 /* SearchFetcher.swift */,
+				69948EAC20DE6228008DF901 /* DetailFetcher.swift */,
+			);
+			path = Fetcher;
+			sourceTree = "<group>";
+		};
+		6924483120DE26E70074CC67 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6924483320DE26E70074CC67 /* RequestBuilder.swift */,
+				6924483420DE26E70074CC67 /* RequestFactory.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		693DB7FB20DED449008B5637 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				693DB7FC20DED457008B5637 /* Helper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		693DB7FE20DED628008B5637 /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				693DB7FF20DED679008B5637 /* SearchFetcherTests.swift */,
+				693DB80120DED847008B5637 /* DetailFetcherTests.swift */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
+		693DB80320DEDE22008B5637 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				693DB81220DEE2DA008B5637 /* User+CoreDataClass.swift */,
+				693DB81320DEE2DA008B5637 /* User+CoreDataProperties.swift */,
+				693DB80420DEDE34008B5637 /* CoreDataHandler.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		69948EAB20DE5417008DF901 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69948EA920DE5412008DF901 /* SearchResult.swift */,
+				69948EB020DE640A008DF901 /* PageDetail.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D157DA551E0F06BC4F48ABBD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5397B8FB45FA1A836EB12144 /* Pods-MoneyTap.debug.xcconfig */,
+				08151735F150566F672AB089 /* Pods-MoneyTap.release.xcconfig */,
+				4C9825EB2983D4D6A4F26A80 /* Pods-MoneyTapTests.debug.xcconfig */,
+				B11481A4E5F44770688219D6 /* Pods-MoneyTapTests.release.xcconfig */,
+				3AEFA35DBB0C9BE9C239C0BA /* Pods-MoneyTapUITests.debug.xcconfig */,
+				BF0E0BA4633E7B09F59C1C91 /* Pods-MoneyTapUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +356,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6924470920DE0B7E0074CC67 /* Build configuration list for PBXNativeTarget "MoneyTap" */;
 			buildPhases = (
+				91F3E94C88ACC3FDB1DC4BC2 /* [CP] Check Pods Manifest.lock */,
 				692446DA20DE0B7C0074CC67 /* Sources */,
 				692446DB20DE0B7C0074CC67 /* Frameworks */,
 				692446DC20DE0B7C0074CC67 /* Resources */,
+				8368A7E331B9056DFB7EF49A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +375,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6924470C20DE0B7E0074CC67 /* Build configuration list for PBXNativeTarget "MoneyTapTests" */;
 			buildPhases = (
+				C12836A4961A5D4D59EC61F7 /* [CP] Check Pods Manifest.lock */,
 				692446F120DE0B7E0074CC67 /* Sources */,
 				692446F220DE0B7E0074CC67 /* Frameworks */,
 				692446F320DE0B7E0074CC67 /* Resources */,
@@ -170,6 +394,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6924470F20DE0B7E0074CC67 /* Build configuration list for PBXNativeTarget "MoneyTapUITests" */;
 			buildPhases = (
+				D172B951CC9FD4F0EF1FC4FF /* [CP] Check Pods Manifest.lock */,
 				692446FC20DE0B7E0074CC67 /* Sources */,
 				692446FD20DE0B7E0074CC67 /* Frameworks */,
 				692446FE20DE0B7E0074CC67 /* Resources */,
@@ -234,6 +459,7 @@
 			files = (
 				692446EF20DE0B7E0074CC67 /* LaunchScreen.storyboard in Resources */,
 				692446EC20DE0B7E0074CC67 /* Assets.xcassets in Resources */,
+				6924471720DE0FB50074CC67 /* SearchResultTableViewCell.xib in Resources */,
 				692446E720DE0B7C0074CC67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +480,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8368A7E331B9056DFB7EF49A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyTap/Pods-MoneyTap-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyTap/Pods-MoneyTap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91F3E94C88ACC3FDB1DC4BC2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyTap-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C12836A4961A5D4D59EC61F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyTapTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D172B951CC9FD4F0EF1FC4FF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyTapUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		692446DA20DE0B7C0074CC67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				692446E420DE0B7C0074CC67 /* ViewController.swift in Sources */,
+				69948EAF20DE6362008DF901 /* DetailViewModel.swift in Sources */,
+				693DB80520DEDE34008B5637 /* CoreDataHandler.swift in Sources */,
+				692446E420DE0B7C0074CC67 /* SearchResultController.swift in Sources */,
+				6924487B20DE26E80074CC67 /* RequestFactory.swift in Sources */,
+				69948EAD20DE6228008DF901 /* DetailFetcher.swift in Sources */,
+				6924471620DE0FB50074CC67 /* SearchResultTableViewCell.swift in Sources */,
+				6924472A20DE226B0074CC67 /* UIViewController+Extension.swift in Sources */,
+				6924487D20DE29540074CC67 /* SearchFetcher.swift in Sources */,
 				692446EA20DE0B7C0074CC67 /* MoneyTap.xcdatamodeld in Sources */,
+				693DB7FD20DED457008B5637 /* Helper.swift in Sources */,
+				6924487A20DE26E80074CC67 /* RequestBuilder.swift in Sources */,
+				69948EB120DE640A008DF901 /* PageDetail.swift in Sources */,
+				69948EAA20DE5412008DF901 /* SearchResult.swift in Sources */,
+				6924472820DE20DB0074CC67 /* DetailsViewController.swift in Sources */,
+				6924486620DE26E80074CC67 /* Fetcher.swift in Sources */,
+				6924471320DE0F280074CC67 /* TableViewDataSource.swift in Sources */,
+				6924471E20DE14690074CC67 /* UITableViewCell+Extension.swift in Sources */,
 				692446E220DE0B7C0074CC67 /* AppDelegate.swift in Sources */,
+				693DB81520DEE2DA008B5637 /* User+CoreDataProperties.swift in Sources */,
+				693DB81720DF983B008B5637 /* User+Extension.swift in Sources */,
+				6924488120DE2C360074CC67 /* SearchResultViewModel.swift in Sources */,
+				6924471920DE11650074CC67 /* SearchResultCellViewModel.swift in Sources */,
+				693DB81420DEE2DA008B5637 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +591,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				692446FA20DE0B7E0074CC67 /* MoneyTapTests.swift in Sources */,
+				693DB80220DED847008B5637 /* DetailFetcherTests.swift in Sources */,
+				693DB80020DED679008B5637 /* SearchFetcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,6 +755,7 @@
 		};
 		6924470A20DE0B7E0074CC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5397B8FB45FA1A836EB12144 /* Pods-MoneyTap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -440,7 +764,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.valtech.MoneyTap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhuvanendra.MoneyTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -449,6 +773,7 @@
 		};
 		6924470B20DE0B7E0074CC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08151735F150566F672AB089 /* Pods-MoneyTap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -457,7 +782,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.valtech.MoneyTap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bhuvanendra.MoneyTap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -466,6 +791,7 @@
 		};
 		6924470D20DE0B7E0074CC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C9825EB2983D4D6A4F26A80 /* Pods-MoneyTapTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +812,7 @@
 		};
 		6924470E20DE0B7E0074CC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B11481A4E5F44770688219D6 /* Pods-MoneyTapTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -506,6 +833,7 @@
 		};
 		6924471020DE0B7E0074CC67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AEFA35DBB0C9BE9C239C0BA /* Pods-MoneyTapUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -525,6 +853,7 @@
 		};
 		6924471120DE0B7E0074CC67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF0E0BA4633E7B09F59C1C91 /* Pods-MoneyTapUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
